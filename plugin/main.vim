@@ -1,8 +1,15 @@
 let mapleader="\\"
 
 " TODO: If zathura open, refresh
-function! CompileAndPreview()
-		execute "! groff -ms % -T pdf > /tmp/groff.pdf && zathura /tmp/groff.pdf &"
+function! Preview()
+		execute "! groff -ms % -T pdf > /tmp/groff.pdf"
+	  execute "! zathura /tmp/groff.pdf &"
 endfunction
 
-noremap <leader>q :call CompileAndPreview()<CR><CR>
+function! Compile()
+		execute "! groff -ms % -T pdf > /tmp/groff.pdf"
+endfunction
+
+
+noremap <leader>p :call Preview()<CR><CR><CR>
+noremap <leader>q :call Compile()<CR><CR>
