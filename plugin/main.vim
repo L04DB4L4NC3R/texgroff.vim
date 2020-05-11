@@ -2,12 +2,18 @@ let mapleader="\\"
 
 " TODO: If zathura open, refresh
 function! Preview()
-		execute "! groff -ms % -T pdf > /tmp/groff.pdf"
-	  execute "! zathura /tmp/groff.pdf &"
+		:call Compile()<CR><CR>
+		execute "! zathura /tmp/op.pdf &"
 endfunction
 
 function! Compile()
-		execute "! groff -ms % -T pdf > /tmp/groff.pdf"
+		let extension = expand('%:e')
+		echo extension
+		if extension == "ms"
+				execute "! groff -ms % -T pdf > /tmp/op.pdf"
+		elseif extension == "tex"
+				execute "! pdflatex -output-directory /tmp -jobname=op -synctex=1 -interaction=nonstopmode %"
+		endif
 endfunction
 
 

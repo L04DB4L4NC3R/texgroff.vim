@@ -1,9 +1,10 @@
-# groff.vim
-A plugin to open groff output pdf in preview
+# texgroff.vim
+A plugin to open groff/latex output pdf in preview
 
 ### Requirements
 
 * **groff** with the `groff_ms` macro
+* **texlive-full** for pdflatex
 * **zathura** pdf viewer
 
 ### Keybindings
@@ -11,4 +12,4 @@ A plugin to open groff output pdf in preview
 | Leader | Key | Action |
 |:------:|:---:|:------:|
 | 	/		 |  p  | Open PDF Preview |
-| 	/		 |  q  | Compile groff |
+| 	/		 |  q  | Compile groff(ms)/latex(tex) |
