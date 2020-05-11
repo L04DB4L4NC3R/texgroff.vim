@@ -1,15 +1,31 @@
 # texgroff.vim
-A plugin to open groff/latex output pdf in preview
+A plugin to open groff/latex/markdown live pdf preview
+
+---
 
 ### Requirements
 
 * **groff** with the `groff_ms` macro
-* **texlive-full** for pdflatex
+* **pandoc** for markdown and latex
 * **zathura** pdf viewer
+
+---
+
+### Installation
+
+* `Without vim package management system`: Copy the main.vim file to your `.vim/autoload`
+
+* `Pathogen`: 
+
+```sh
+git clone https://github.com/L04DB4L4NC3R/texgroff.vim ~/.vim/bundle/texgroff.vim
+```
+
+---
 
 ### Keybindings
 
 | Leader | Key | Action |
 |:------:|:---:|:------:|
-| 	/		 |  p  | Open PDF Preview |
-| 	/		 |  q  | Compile groff(ms)/latex(tex) |
+| 	/		 |  p  | Open live PDF Preview |
+| 	/		 |  q  | Compile groff(.ms)/latex(.tex)/markdown(.md) |
