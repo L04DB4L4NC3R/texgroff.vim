@@ -29,3 +29,16 @@ git clone https://github.com/L04DB4L4NC3R/texgroff.vim ~/.vim/bundle/texgroff.vi
 |:------:|:---:|:------:|
 | 	/		 |  p  | Open live PDF Preview |
 | 	/		 |  q  | Compile groff(.ms)/latex(.tex)/markdown(.md) |
+
+---
+
+### Demonstration
+
+[View the demo on Youtube](https://youtu.be/s4gVmJafKf0)
+
+
+<p align="center" >
+
+Made with :heart: by Angad Sharma
+
+</p>
