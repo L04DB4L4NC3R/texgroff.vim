@@ -2,7 +2,7 @@ let mapleader="\\"
 
 " TODO: If zathura open, refresh
 function! Preview()
-		:call Compile()<CR><CR>
+		call Compile()<CR><CR>
 		execute "! zathura /tmp/op.pdf &"
 endfunction
 
