@@ -5,7 +5,7 @@ A plugin to open groff/latex/markdown live pdf preview
 
 ### Requirements
 
-* **groff** with the `groff_ms` macro
+* **groff** with the `groff_ms`, `groff_mom`, `groff_man`, and `groff_mm` macros
 * **pandoc** for markdown and latex
 * **zathura** pdf viewer
 
